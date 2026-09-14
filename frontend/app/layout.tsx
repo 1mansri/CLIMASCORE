@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Fraunces, IBM_Plex_Sans } from "next/font/google";
 import { Nav } from "@/components/nav";
 import "./globals.css";
@@ -29,10 +30,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Nav />
         <main className="flex-1">{children}</main>
         <footer className="no-print border-t border-border bg-white py-6">
-          <div className="mx-auto max-w-7xl px-4 text-xs text-text-muted sm:px-6">
-            CLIMASCORE is decision support, not autonomous credit approval. Borrower figures for Surat Textile
-            Works are illustrative / synthetic, created for prototype demonstration. Team DASK — IIT
-            Kharagpur — SANKALP 2026, Climate Tech.
+          <div className="mx-auto flex max-w-7xl flex-col gap-2 px-4 text-xs text-text-muted sm:px-6">
+            <p>
+              CLIMASCORE is decision support, not autonomous credit approval. Borrower figures for Surat
+              Textile Works are illustrative / synthetic, created for prototype demonstration. Team DASK —
+              IIT Kharagpur — SANKALP 2026, Climate Tech.
+            </p>
+            <Link href="/methodology" className="font-medium text-blue hover:text-blue-dark">
+              How every score on this page is calculated →
+            </Link>
           </div>
         </footer>
       </body>

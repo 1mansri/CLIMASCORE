@@ -1,97 +1,17 @@
 [
   {
-    "id": "EVID-001",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Climate Event",
-    "label": "Surat Flood — July 2026",
-    "source": "Indian Express, July 2026",
-    "source_url": "https://indianexpress.com/article/cities/ahmedabad/surat-powerloom-owners-property-tax-waiver-flood-losses-10811066/",
-    "timestamp": "2026-07-07",
-    "data_type": "Public event evidence",
-    "quality": "reported",
-    "description": "Reported by Indian Express; figures are claims in a local industry memorandum, not independently audited measurements.",
-    "provenance": "observed"
-  },
-  {
-    "id": "EVID-002",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Hazard Data",
-    "label": "Rainfall / flood hazard signal",
-    "source": "WRI India, June 2026 vulnerability assessment",
-    "source_url": "https://wri-india.org/research/resilience-micro-small-and-medium-enterprises-climate-risks-vulnerability-assessment",
-    "timestamp": "2026-06-23",
-    "data_type": "Research / field evidence",
-    "quality": "reported",
-    "description": "Cluster-level hazard context for Surat manufacturing units from WRI India's field assessment.",
-    "provenance": "observed"
-  },
-  {
-    "id": "EVID-003",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Borrower Location",
-    "label": "Registered facility coordinates",
-    "source": "CLIMASCORE seed dataset",
-    "timestamp": "2026-01-05",
-    "data_type": "Illustrative borrower record",
-    "quality": "modelled",
-    "description": "Illustrative / synthetic borrower location used for prototype demonstration; not a real registered address.",
-    "provenance": "synthetic"
-  },
-  {
-    "id": "EVID-004",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Asset / Operations",
-    "label": "Equipment, inventory and facility profile",
-    "source": "CLIMASCORE seed dataset",
-    "timestamp": "2026-01-05",
-    "data_type": "Illustrative borrower record",
-    "quality": "modelled",
-    "description": "Synthetic asset and operations figures created for the prototype; not observed financial statements.",
-    "provenance": "synthetic"
-  },
-  {
-    "id": "EVID-005",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Adaptation Record",
-    "label": "Raised equipment, flood barrier, improved drainage",
-    "source": "CLIMASCORE seed dataset",
-    "timestamp": "2026-03-20",
-    "data_type": "Illustrative adaptation record",
-    "quality": "modelled",
-    "description": "Illustrative adaptation installation records with vendor/contractor documentation placeholders.",
-    "provenance": "synthetic"
-  },
-  {
-    "id": "EVID-006",
-    "msme_id": "MSME-SURAT-001",
-    "event_id": "EVENT-SURAT-FLOOD-2026",
-    "stage": "Modelled Impact",
-    "label": "Counterfactual loss, downtime and risk estimate",
-    "source": "CLIMASCORE counterfactual engine",
-    "timestamp": "2026-07-08",
-    "data_type": "Illustrative model output",
-    "quality": "modelled",
-    "description": "Deterministic, transparent illustrative model — not an empirically validated causal estimate. Observed post-event loss data has not yet been collected for this borrower.",
-    "provenance": "modelled"
-  },
-  {
     "id": "EVID-007",
     "msme_id": "MSME-SURAT-001",
     "event_id": "EVENT-SURAT-HEAT-2026",
     "stage": "Climate Event",
-    "label": "Surat Extreme Heat — 2026",
+    "label": "Surat Extreme Heat \u2014 2026",
     "source": "WRI India, June 2026",
     "source_url": "https://wri-india.org/research/resilience-micro-small-and-medium-enterprises-climate-risks-vulnerability-assessment",
     "timestamp": "2026-06-23",
-    "data_type": "Research / field evidence",
-    "quality": "reported",
+    "quality": "documented",
     "description": "WRI India's field assessment of heat-related operational disruption across Surat, Chennai and Coimbatore manufacturing clusters.",
-    "provenance": "observed"
+    "provenance": "observed",
+    "type": "hazard_event"
   },
   {
     "id": "EVID-008",
@@ -102,10 +22,10 @@
     "source": "World Bank, July 2026",
     "source_url": "https://www.worldbank.org/en/news/press-release/2026/07/28/extreme-heat-puts-south-asia-s-jobs-and-growth-at-risk-world-bank",
     "timestamp": "2026-07-28",
-    "data_type": "Research / field evidence",
-    "quality": "reported",
+    "quality": "documented",
     "description": "World Bank estimates extreme heat costs South Asia nearly 31 million full-time jobs annually.",
-    "provenance": "observed"
+    "provenance": "observed",
+    "type": "remote_sensing"
   },
   {
     "id": "EVID-009",
@@ -115,10 +35,10 @@
     "label": "Registered facility coordinates",
     "source": "CLIMASCORE seed dataset",
     "timestamp": "2026-01-05",
-    "data_type": "Illustrative borrower record",
-    "quality": "modelled",
+    "quality": "documented",
     "description": "Illustrative / synthetic borrower location used for prototype demonstration.",
-    "provenance": "synthetic"
+    "provenance": "synthetic",
+    "type": "location"
   },
   {
     "id": "EVID-010",
@@ -128,10 +48,10 @@
     "label": "Equipment, inventory and facility profile",
     "source": "CLIMASCORE seed dataset",
     "timestamp": "2026-01-05",
-    "data_type": "Illustrative borrower record",
-    "quality": "modelled",
+    "quality": "documented",
     "description": "Synthetic asset and operations figures created for the prototype.",
-    "provenance": "synthetic"
+    "provenance": "synthetic",
+    "type": "asset_operations"
   },
   {
     "id": "EVID-011",
@@ -141,10 +61,10 @@
     "label": "Cooling / heat protection (proposed)",
     "source": "CLIMASCORE seed dataset",
     "timestamp": "2026-08-01",
-    "data_type": "Illustrative adaptation record",
-    "quality": "modelled",
-    "description": "Proposed measure, not yet installed — shown for planning context only.",
-    "provenance": "synthetic"
+    "quality": "self_reported",
+    "description": "Proposed measure, not yet installed \u2014 shown for planning context only.",
+    "provenance": "synthetic",
+    "type": "adaptation_record"
   },
   {
     "id": "EVID-012",
@@ -154,9 +74,89 @@
     "label": "Counterfactual loss, downtime and risk estimate",
     "source": "CLIMASCORE counterfactual engine",
     "timestamp": "2026-06-30",
-    "data_type": "Illustrative model output",
-    "quality": "modelled",
-    "description": "Deterministic, transparent illustrative model — not an empirically validated causal estimate.",
-    "provenance": "modelled"
+    "quality": "documented",
+    "description": "Deterministic, transparent illustrative model \u2014 not an empirically validated causal estimate.",
+    "provenance": "modelled",
+    "type": "modelled_impact"
+  },
+  {
+    "id": "EVID-001",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Climate Event",
+    "label": "Surat Flood \u2014 July 2026",
+    "source": "Indian Express, July 2026",
+    "source_url": "https://indianexpress.com/article/cities/ahmedabad/surat-powerloom-owners-property-tax-waiver-flood-losses-10811066/",
+    "timestamp": "2026-07-07",
+    "quality": "documented",
+    "description": "Reported by Indian Express; figures are claims in a local industry memorandum, not independently audited measurements.",
+    "provenance": "observed",
+    "type": "hazard_event"
+  },
+  {
+    "id": "EVID-002",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Hazard Data",
+    "label": "Rainfall / flood hazard signal",
+    "source": "WRI India, June 2026 vulnerability assessment",
+    "source_url": "https://wri-india.org/research/resilience-micro-small-and-medium-enterprises-climate-risks-vulnerability-assessment",
+    "timestamp": "2026-06-23",
+    "quality": "verified",
+    "description": "Cluster-level hazard context for Surat manufacturing units from WRI India's field assessment.",
+    "provenance": "observed",
+    "type": "remote_sensing"
+  },
+  {
+    "id": "EVID-003",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Borrower Location",
+    "label": "Registered facility coordinates",
+    "source": "CLIMASCORE seed dataset",
+    "timestamp": "2026-01-05",
+    "quality": "documented",
+    "description": "Illustrative / synthetic borrower location used for prototype demonstration; not a real registered address.",
+    "provenance": "synthetic",
+    "type": "location"
+  },
+  {
+    "id": "EVID-004",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Asset / Operations",
+    "label": "Equipment, inventory and facility profile",
+    "source": "CLIMASCORE seed dataset",
+    "timestamp": "2026-01-05",
+    "quality": "verified",
+    "description": "Synthetic asset and operations figures created for the prototype; not observed financial statements.",
+    "provenance": "synthetic",
+    "type": "asset_operations"
+  },
+  {
+    "id": "EVID-005",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Adaptation Record",
+    "label": "Raised equipment, flood barrier, improved drainage",
+    "source": "CLIMASCORE seed dataset",
+    "timestamp": "2026-03-20",
+    "quality": "verified",
+    "description": "Illustrative adaptation installation records with vendor/contractor documentation placeholders.",
+    "provenance": "synthetic",
+    "type": "adaptation_record"
+  },
+  {
+    "id": "EVID-006",
+    "msme_id": "MSME-SURAT-001",
+    "event_id": "EVENT-SURAT-FLOOD-2026",
+    "stage": "Modelled Impact",
+    "label": "Counterfactual loss, downtime and risk estimate",
+    "source": "CLIMASCORE counterfactual engine",
+    "timestamp": "2026-07-08",
+    "quality": "documented",
+    "description": "Deterministic, transparent illustrative model \u2014 not an empirically validated causal estimate. Observed post-event loss data has not yet been collected for this borrower.",
+    "provenance": "modelled",
+    "type": "modelled_impact"
   }
 ]

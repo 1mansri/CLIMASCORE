@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Badge } from "@/components/ui";
+import { Badge, ProvenanceBadge } from "@/components/ui";
 import { RiskGauge } from "@/components/ui/risk-gauge";
 import { fetchMsme, postCounterfactualRun } from "@/lib/api";
 import { riskBandForScore } from "@/lib/formatting";
@@ -53,8 +53,9 @@ export default async function LenderActionPage({ params }: { params: Promise<{ m
         <p className="text-text-muted">Post-adaptation, post-event climate risk assessment.</p>
       </header>
 
-      <section aria-label="Current borrower climate risk" className="border border-border bg-white p-8">
-        <RiskGauge score={currentScore} band={band} label="Borrower Climate Risk" size="large" />
+      <section aria-label="Current borrower climate risk" className="flex flex-col gap-4 border border-border bg-white p-8">
+        <RiskGauge score={currentScore} band={band} label="Borrower Climate Risk" size="large" showMethodologyLink />
+        <ProvenanceBadge kind="modelled" showDescription />
       </section>
 
       <section aria-label="Suggested lender actions" className="flex flex-col gap-4">

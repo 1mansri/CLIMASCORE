@@ -100,7 +100,7 @@ async def seed_evidence(session: AsyncSession) -> None:
             msme_id=item.get("msme_id"),
             type=item["type"],
             source=item["source"],
-            source_url=item["source_url"],
+            source_url=item.get("source_url", ""),
             quality=item["quality"],
             description=item["description"],
             timestamp=datetime.fromisoformat(item["timestamp"]),

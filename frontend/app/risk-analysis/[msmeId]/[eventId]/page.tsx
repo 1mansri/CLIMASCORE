@@ -170,7 +170,12 @@ function CounterfactualAnalysisContent({
       <section aria-label="Resilience delta" className="border border-border bg-light-blue p-8">
         <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
           <h2 className="font-serif text-2xl text-navy">Resilience delta</h2>
-          <Badge variant="blue">Illustrative model output</Badge>
+          <div className="flex items-center gap-3">
+            <Link href="/methodology" className="text-xs font-medium text-blue hover:text-blue-dark">
+              How is this calculated? →
+            </Link>
+            <Badge variant="blue">Illustrative model output</Badge>
+          </div>
         </div>
         {loading || !run ? (
           <p className="text-text-muted">Computing modelled resilience delta…</p>

@@ -43,7 +43,7 @@ export default async function MsmeProfilePage({ params }: { params: Promise<{ id
       </header>
 
       <section aria-label="Overall climate risk" className="grid grid-cols-1 gap-8 border border-border bg-white p-8 lg:grid-cols-2">
-        <RiskGauge score={msme.baselineRiskScore} band={msme.riskBand} size="large" />
+        <RiskGauge score={msme.baselineRiskScore} band={msme.riskBand} size="large" showMethodologyLink />
         <RiskBreakdownList breakdown={msme.riskBreakdown} />
       </section>
 

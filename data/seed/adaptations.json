@@ -2,97 +2,97 @@
   {
     "id": "ADAPT-001",
     "msme_id": "MSME-SURAT-001",
-    "type": "raised_equipment",
+    "measure_id": "raised_equipment",
     "name": "Raised Equipment Platforms",
     "hazard": "Flood",
     "status": "active",
-    "cost": 420000,
-    "date": "2026-02-14",
+    "cost_inr": 420000,
+    "date_implemented": "2026-02-14",
     "evidence": "Site photos and vendor invoice on file (illustrative record for prototype).",
-    "estimated_effect": 0.28
+    "estimated_effect": "~40% vulnerability reduction, ~35% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-002",
     "msme_id": "MSME-SURAT-001",
-    "type": "flood_barrier",
+    "measure_id": "flood_barrier",
     "name": "Perimeter Flood Barrier",
     "hazard": "Flood",
     "status": "active",
-    "cost": 260000,
-    "date": "2026-03-02",
+    "cost_inr": 260000,
+    "date_implemented": "2026-03-02",
     "evidence": "Installation completion certificate (illustrative record for prototype).",
-    "estimated_effect": 0.22
+    "estimated_effect": "~35% vulnerability reduction, ~30% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-003",
     "msme_id": "MSME-SURAT-001",
-    "type": "improved_drainage",
+    "measure_id": "improved_drainage",
     "name": "Improved Site Drainage",
     "hazard": "Flood",
     "status": "active",
-    "cost": 180000,
-    "date": "2026-03-20",
+    "cost_inr": 180000,
+    "date_implemented": "2026-03-20",
     "evidence": "Contractor completion report (illustrative record for prototype).",
-    "estimated_effect": 0.15
+    "estimated_effect": "~25% vulnerability reduction, ~30% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-004",
     "msme_id": "MSME-SURAT-001",
-    "type": "cooling_protection",
+    "measure_id": "cooling_heat_protection",
     "name": "Cooling / Heat Protection",
     "hazard": "Extreme Heat",
     "status": "proposed",
-    "cost": 310000,
-    "date": "2026-08-01",
+    "cost_inr": 310000,
+    "date_implemented": "2026-08-01",
     "evidence": "Vendor quotation received; not yet installed.",
-    "estimated_effect": 0.18
+    "estimated_effect": "~30% vulnerability reduction, ~25% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-005",
     "msme_id": "MSME-SURAT-001",
-    "type": "backup_power",
+    "measure_id": "backup_power",
     "name": "Backup Power Supply",
-    "hazard": "General",
+    "hazard": "Flood",
     "status": "inactive",
-    "cost": 550000,
-    "date": "2026-05-10",
+    "cost_inr": 550000,
+    "date_implemented": "2026-05-10",
     "evidence": "Feasibility assessment completed; financing not yet approved.",
-    "estimated_effect": 0.12
+    "estimated_effect": "~15% vulnerability reduction, ~40% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-006",
     "msme_id": "MSME-SURAT-001",
-    "type": "protected_inventory",
+    "measure_id": "protected_inventory",
     "name": "Protected Inventory Storage",
     "hazard": "Flood",
     "status": "inactive",
-    "cost": 150000,
-    "date": "2026-05-22",
+    "cost_inr": 150000,
+    "date_implemented": "2026-05-22",
     "evidence": "Design proposal under review.",
-    "estimated_effect": 0.14
+    "estimated_effect": "~20% vulnerability reduction, ~10% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-007",
     "msme_id": "MSME-SURAT-002",
-    "type": "raised_equipment",
+    "measure_id": "raised_equipment",
     "name": "Raised Equipment Platforms",
     "hazard": "Flood",
     "status": "active",
-    "cost": 390000,
-    "date": "2026-01-18",
+    "cost_inr": 390000,
+    "date_implemented": "2026-01-18",
     "evidence": "Illustrative adaptation record.",
-    "estimated_effect": 0.2
+    "estimated_effect": "~40% vulnerability reduction, ~35% downtime reduction (illustrative model assumption)"
   },
   {
     "id": "ADAPT-008",
     "msme_id": "MSME-SURAT-003",
-    "type": "flood_barrier",
+    "measure_id": "flood_barrier",
     "name": "Perimeter Flood Barrier",
     "hazard": "Flood",
     "status": "proposed",
-    "cost": 240000,
-    "date": "2026-07-30",
+    "cost_inr": 240000,
+    "date_implemented": "2026-07-30",
     "evidence": "Illustrative adaptation record.",
-    "estimated_effect": 0.2
+    "estimated_effect": "~35% vulnerability reduction, ~30% downtime reduction (illustrative model assumption)"
   }
 ]

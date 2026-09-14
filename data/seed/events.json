@@ -2,7 +2,10 @@
   {
     "id": "EVENT-SURAT-FLOOD-2026",
     "type": "Flood",
-    "location": "Surat, Gujarat",
+    "location_name": "Surat, Gujarat",
+    "latitude": 21.1702,
+    "longitude": 72.8311,
+    "radius_km": 15.0,
     "start_date": "2026-07-07",
     "end_date": "2026-07-23",
     "severity": "High",
@@ -16,7 +19,10 @@
   {
     "id": "EVENT-SURAT-HEAT-2026",
     "type": "Extreme Heat",
-    "location": "Surat, Gujarat",
+    "location_name": "Surat, Gujarat",
+    "latitude": 21.1959,
+    "longitude": 72.8302,
+    "radius_km": 25.0,
     "start_date": "2026-06-01",
     "end_date": "2026-06-30",
     "severity": "High",

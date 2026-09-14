@@ -8,6 +8,13 @@ from fastapi import Depends
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.db.session import get_session
+from app.repositories.interfaces import (
+    AdaptationRepository,
+    CounterfactualRepository,
+    EventRepository,
+    EvidenceRepository,
+    MSMERepository,
+)
 from app.repositories.postgres import (
     SqlAlchemyAdaptationRepository,
     SqlAlchemyCounterfactualRepository,
@@ -23,34 +30,40 @@ from app.services.risk_engine import RiskEngine
 
 SessionDep = Annotated[AsyncSession, Depends(get_session)]
 
+# Return types are the repository Protocols, not the concrete SqlAlchemy*
+# classes, so DIP is enforced by mypy at the wiring boundary itself: an
+# engine/route requesting one of the *RepoDep aliases below only ever sees
+# the Protocol's method surface, even though the concrete implementation
+# constructed here has a wider one. This closes the gap where a method
+# added to a concrete repository but missing from its Protocol could be
+# called by a caller typed against the concrete class instead.
 
-def get_msme_repository(session: SessionDep) -> SqlAlchemyMSMERepository:
+
+def get_msme_repository(session: SessionDep) -> MSMERepository:
     return SqlAlchemyMSMERepository(session)
 
 
-def get_event_repository(session: SessionDep) -> SqlAlchemyEventRepository:
+def get_event_repository(session: SessionDep) -> EventRepository:
     return SqlAlchemyEventRepository(session)
 
 
-def get_adaptation_repository(session: SessionDep) -> SqlAlchemyAdaptationRepository:
+def get_adaptation_repository(session: SessionDep) -> AdaptationRepository:
     return SqlAlchemyAdaptationRepository(session)
 
 
-def get_counterfactual_repository(session: SessionDep) -> SqlAlchemyCounterfactualRepository:
+def get_counterfactual_repository(session: SessionDep) -> CounterfactualRepository:
     return SqlAlchemyCounterfactualRepository(session)
 
 
-def get_evidence_repository(session: SessionDep) -> SqlAlchemyEvidenceRepository:
+def get_evidence_repository(session: SessionDep) -> EvidenceRepository:
     return SqlAlchemyEvidenceRepository(session)
 
 
-MSMERepoDep = Annotated[SqlAlchemyMSMERepository, Depends(get_msme_repository)]
-EventRepoDep = Annotated[SqlAlchemyEventRepository, Depends(get_event_repository)]
-AdaptationRepoDep = Annotated[SqlAlchemyAdaptationRepository, Depends(get_adaptation_repository)]
-CounterfactualRepoDep = Annotated[
-    SqlAlchemyCounterfactualRepository, Depends(get_counterfactual_repository)
-]
-EvidenceRepoDep = Annotated[SqlAlchemyEvidenceRepository, Depends(get_evidence_repository)]
+MSMERepoDep = Annotated[MSMERepository, Depends(get_msme_repository)]
+EventRepoDep = Annotated[EventRepository, Depends(get_event_repository)]
+AdaptationRepoDep = Annotated[AdaptationRepository, Depends(get_adaptation_repository)]
+CounterfactualRepoDep = Annotated[CounterfactualRepository, Depends(get_counterfactual_repository)]
+EvidenceRepoDep = Annotated[EvidenceRepository, Depends(get_evidence_repository)]
 
 
 def get_risk_engine() -> RiskEngine:

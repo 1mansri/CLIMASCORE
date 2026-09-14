@@ -1,0 +1,30 @@
+[
+  {
+    "id": "EVENT-SURAT-FLOOD-2026",
+    "type": "Flood",
+    "location": "Surat, Gujarat",
+    "start_date": "2026-07-07",
+    "end_date": "2026-07-23",
+    "severity": "High",
+    "source": "Indian Express, July 2026",
+    "source_url": "https://indianexpress.com/article/cities/ahmedabad/surat-powerloom-owners-property-tax-waiver-flood-losses-10811066/",
+    "source_type": "Public event evidence",
+    "description": "Powerloom unit owners in Uma Industrial Society, Surat, reported that flooding on July 7-8, 2026 damaged machinery, raw and finished materials and electrical equipment; a local industry memorandum cited Rs 10-15 lakh or more per plot in reported direct loss, repeated flooding on July 22-23, and many units remaining closed for around 25 days. These are reported claims by unit owners in a memorandum, not independently audited measurements.",
+    "affected_msme_ids": ["MSME-SURAT-001", "MSME-SURAT-002", "MSME-SURAT-003"],
+    "provenance": "observed"
+  },
+  {
+    "id": "EVENT-SURAT-HEAT-2026",
+    "type": "Extreme Heat",
+    "location": "Surat, Gujarat",
+    "start_date": "2026-06-01",
+    "end_date": "2026-06-30",
+    "severity": "High",
+    "source": "WRI India, June 23, 2026",
+    "source_url": "https://wri-india.org/research/resilience-micro-small-and-medium-enterprises-climate-risks-vulnerability-assessment",
+    "source_type": "Research / field evidence",
+    "description": "WRI India's June 2026 vulnerability assessment examined more than 300 MSMEs and field/stakeholder evidence across manufacturing clusters in Surat, Chennai and Coimbatore, documenting operational disruption, supply-chain impacts, productivity losses, financial challenges and barriers to resilience linked to extreme heat.",
+    "affected_msme_ids": ["MSME-SURAT-001", "MSME-SURAT-002", "MSME-SURAT-003", "MSME-SURAT-004"],
+    "provenance": "observed"
+  }
+]

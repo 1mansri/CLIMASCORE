@@ -1,0 +1,34 @@
+# Node / frontend
+node_modules/
+.next/
+out/
+frontend/.env.local
+
+# Python / backend
+__pycache__/
+*.pyc
+.venv/
+venv/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+*.egg-info/
+
+# Env files
+.env
+.env.local
+!.env.example
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Docker
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+.coverage

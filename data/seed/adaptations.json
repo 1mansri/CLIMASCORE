@@ -1,0 +1,98 @@
+[
+  {
+    "id": "ADAPT-001",
+    "msme_id": "MSME-SURAT-001",
+    "type": "raised_equipment",
+    "name": "Raised Equipment Platforms",
+    "hazard": "Flood",
+    "status": "active",
+    "cost": 420000,
+    "date": "2026-02-14",
+    "evidence": "Site photos and vendor invoice on file (illustrative record for prototype).",
+    "estimated_effect": 0.28
+  },
+  {
+    "id": "ADAPT-002",
+    "msme_id": "MSME-SURAT-001",
+    "type": "flood_barrier",
+    "name": "Perimeter Flood Barrier",
+    "hazard": "Flood",
+    "status": "active",
+    "cost": 260000,
+    "date": "2026-03-02",
+    "evidence": "Installation completion certificate (illustrative record for prototype).",
+    "estimated_effect": 0.22
+  },
+  {
+    "id": "ADAPT-003",
+    "msme_id": "MSME-SURAT-001",
+    "type": "improved_drainage",
+    "name": "Improved Site Drainage",
+    "hazard": "Flood",
+    "status": "active",
+    "cost": 180000,
+    "date": "2026-03-20",
+    "evidence": "Contractor completion report (illustrative record for prototype).",
+    "estimated_effect": 0.15
+  },
+  {
+    "id": "ADAPT-004",
+    "msme_id": "MSME-SURAT-001",
+    "type": "cooling_protection",
+    "name": "Cooling / Heat Protection",
+    "hazard": "Extreme Heat",
+    "status": "proposed",
+    "cost": 310000,
+    "date": "2026-08-01",
+    "evidence": "Vendor quotation received; not yet installed.",
+    "estimated_effect": 0.18
+  },
+  {
+    "id": "ADAPT-005",
+    "msme_id": "MSME-SURAT-001",
+    "type": "backup_power",
+    "name": "Backup Power Supply",
+    "hazard": "General",
+    "status": "inactive",
+    "cost": 550000,
+    "date": "2026-05-10",
+    "evidence": "Feasibility assessment completed; financing not yet approved.",
+    "estimated_effect": 0.12
+  },
+  {
+    "id": "ADAPT-006",
+    "msme_id": "MSME-SURAT-001",
+    "type": "protected_inventory",
+    "name": "Protected Inventory Storage",
+    "hazard": "Flood",
+    "status": "inactive",
+    "cost": 150000,
+    "date": "2026-05-22",
+    "evidence": "Design proposal under review.",
+    "estimated_effect": 0.14
+  },
+  {
+    "id": "ADAPT-007",
+    "msme_id": "MSME-SURAT-002",
+    "type": "raised_equipment",
+    "name": "Raised Equipment Platforms",
+    "hazard": "Flood",
+    "status": "active",
+    "cost": 390000,
+    "date": "2026-01-18",
+    "evidence": "Illustrative adaptation record.",
+    "estimated_effect": 0.2
+  },
+  {
+    "id": "ADAPT-008",
+    "msme_id": "MSME-SURAT-003",
+    "type": "flood_barrier",
+    "name": "Perimeter Flood Barrier",
+    "hazard": "Flood",
+    "status": "proposed",
+    "cost": 240000,
+    "date": "2026-07-30",
+    "evidence": "Illustrative adaptation record.",
+    "estimated_effect": 0.2
+  }
+]

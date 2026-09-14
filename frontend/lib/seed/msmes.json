@@ -1,0 +1,138 @@
+[
+  {
+    "id": "MSME-SURAT-001",
+    "name": "Surat Textile Works",
+    "type": "Illustrative MSME",
+    "sector": "Textile / Powerloom",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India",
+    "latitude": 21.1702,
+    "longitude": 72.8311,
+    "annualRevenueInr": 15000000,
+    "inventoryValueInr": 3000000,
+    "equipmentValueInr": 2500000,
+    "facilityAreaSqft": 10000,
+    "employees": 55,
+    "baselineRiskScore": 78,
+    "riskBand": "High",
+    "riskBreakdown": {
+      "hazard": 82,
+      "exposure": 78,
+      "vulnerability": 80,
+      "businessCriticality": 68,
+      "overall": 78,
+      "band": "High"
+    },
+    "hazardExposure": {
+      "flood": 84,
+      "heat": 71,
+      "cyclone": 22,
+      "drought": 18
+    },
+    "operationalSensitivity": "High dependence on continuous powerloom operation; downtime directly halts revenue with limited buffer inventory.",
+    "provenance": "synthetic"
+  },
+  {
+    "id": "MSME-SURAT-002",
+    "name": "Tapi River Dyeing Co.",
+    "type": "Illustrative MSME",
+    "sector": "Textile / Dyeing & Processing",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India",
+    "latitude": 21.1958,
+    "longitude": 72.8302,
+    "annualRevenueInr": 22000000,
+    "inventoryValueInr": 4200000,
+    "equipmentValueInr": 6100000,
+    "facilityAreaSqft": 14500,
+    "employees": 88,
+    "baselineRiskScore": 64,
+    "riskBand": "Moderate",
+    "riskBreakdown": {
+      "hazard": 75,
+      "exposure": 66,
+      "vulnerability": 58,
+      "businessCriticality": 55,
+      "overall": 64,
+      "band": "Moderate"
+    },
+    "hazardExposure": {
+      "flood": 70,
+      "heat": 65,
+      "cyclone": 20,
+      "drought": 15
+    },
+    "operationalSensitivity": "Water-intensive dyeing process; moderate resilience from partially raised effluent infrastructure.",
+    "provenance": "synthetic"
+  },
+  {
+    "id": "MSME-SURAT-003",
+    "name": "Varachha Weaving Cooperative",
+    "type": "Illustrative MSME",
+    "sector": "Textile / Powerloom",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India",
+    "latitude": 21.2187,
+    "longitude": 72.8635,
+    "annualRevenueInr": 9500000,
+    "inventoryValueInr": 1800000,
+    "equipmentValueInr": 1400000,
+    "facilityAreaSqft": 6200,
+    "employees": 34,
+    "baselineRiskScore": 71,
+    "riskBand": "High",
+    "riskBreakdown": {
+      "hazard": 80,
+      "exposure": 69,
+      "vulnerability": 74,
+      "businessCriticality": 60,
+      "overall": 71,
+      "band": "High"
+    },
+    "hazardExposure": {
+      "flood": 77,
+      "heat": 68,
+      "cyclone": 19,
+      "drought": 16
+    },
+    "operationalSensitivity": "Ground-level machinery with limited drainage; thin working-capital buffer for extended closures.",
+    "provenance": "synthetic"
+  },
+  {
+    "id": "MSME-SURAT-004",
+    "name": "Sarthana Knitwear Unit",
+    "type": "Illustrative MSME",
+    "sector": "Textile / Knitwear",
+    "city": "Surat",
+    "state": "Gujarat",
+    "country": "India",
+    "latitude": 21.2245,
+    "longitude": 72.8794,
+    "annualRevenueInr": 12800000,
+    "inventoryValueInr": 2400000,
+    "equipmentValueInr": 1900000,
+    "facilityAreaSqft": 7800,
+    "employees": 41,
+    "baselineRiskScore": 42,
+    "riskBand": "Moderate",
+    "riskBreakdown": {
+      "hazard": 58,
+      "exposure": 48,
+      "vulnerability": 35,
+      "businessCriticality": 40,
+      "overall": 42,
+      "band": "Moderate"
+    },
+    "hazardExposure": {
+      "flood": 45,
+      "heat": 62,
+      "cyclone": 17,
+      "drought": 14
+    },
+    "operationalSensitivity": "Recently relocated to a raised industrial estate; lower flood exposure than cluster average.",
+    "provenance": "synthetic"
+  }
+]

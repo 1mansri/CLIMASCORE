@@ -1,0 +1,59 @@
+services:
+  db:
+    image: postgis/postgis:18-3.5
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-climascore}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-climascore}
+      POSTGRES_DB: ${POSTGRES_DB:-climascore}
+    ports:
+      - "5432:5432"
+    volumes:
+      - climascore_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-climascore}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    profiles:
+      - redis
+
+  api:
+    build:
+      context: ./backend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-climascore}:${POSTGRES_PASSWORD:-climascore}@db:5432/${POSTGRES_DB:-climascore}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "alembic upgrade head &&
+             python -m scripts.seed &&
+             uvicorn app.main:app --host 0.0.0.0 --port 8000"
+
+  web:
+    build:
+      context: ./frontend
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api/v1
+    depends_on:
+      - api
+    ports:
+      - "3000:3000"
+
+volumes:
+  climascore_pgdata:

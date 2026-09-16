@@ -7,7 +7,6 @@ lender-readable resilience signal.
 
 Team DASK · IIT Kharagpur · SANKALP 2026, Climate Edition · Student Track
 
-Full product/engineering spec: [`CLIMASCORE_Prototype_Master_Specification.md`](CLIMASCORE_Prototype_Master_Specification.md).
 
 ## Quickstart
 
